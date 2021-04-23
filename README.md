@@ -6,10 +6,14 @@ Antibody upstream sequence (AUS) repository contains all key python scripts for 
 
 ## Table of contents
 * [AUS identification](#aus-identification)
+	* [AUS identification for human](#aus-identification-for-human)
+	* [AUS identification for non-human species](#aus-identification-for-non-human-species)
 * [Characterization analyses](#characterization-analyses)
 
 
 ## AUS identification
+
+### AUS identification for human
 
 ### AUS identification for non-human species
 `nonhuman_aus_identification.py cloneFl alignFl primer sample leader_imgt.fasta utr_imgt.fasta isotype`
