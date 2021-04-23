@@ -39,6 +39,7 @@ IGHV4S17*01	Homozygote	upstream	1	NA	815	ACATGGGAAATGTTCTCTGAGAGTCACGGACCTCCTGGG
 IGHV4S17*01	Homozygote	upstream	2	NA	815	ATGCTCTCTGAGAGTCATGGACATCCTGTGCAAGAACATGAAGCACCTGTGGTTCTTCCTCCTCCTGGTGGCAGCTCCCAGATGGGTCCTGTCC	37 0.080981595092	66	175	0.9326956172551308	MFS01	IgM	ATGCTCTCTGAGAGTCATGGACATCCTGTGCAAGAACATGAAGCACCTGTGGTTCTTCCTCCTCCTGGTGGCAGCTCCCAGATGGGTCCTGTCC_IGHV4S17*01	1	2	ATGAAGCACCTGTGGTTCTTCCTCCTCCTGGTGGCAGCTCCCAGATGGGTCCTGTCC	ATGCTCTCTGAGAGTCATGGACATCCTGTGCAAGAAC	ATCCTGTGCAAGAACATGAAGCACCTGTGGTTC
 ```
 
+Due to the primer difference between the in-house dataset and public dataset (`PRJEB15295` and `PRJNA503527`), the parameters employed for identifying AUS for these datasets are different. Three variant scripts are also provided in the `scripts` directory. The samples for which they apply to is provided in `aus_script_and_samples.txt`.
 
 ## Characterization analyses
 
@@ -48,4 +49,4 @@ IGHV4S17*01	Homozygote	upstream	2	NA	815	ATGCTCTCTGAGAGTCATGGACATCCTGTGCAAGAACAT
 In-house scripts above were written in Python (v3.7). Note that a series of modules are required, which include `pandas`, `numpy`, `csv`, `seaborn`, `matplotlib`, `warnings`, `multiprocessing`, `argparse`, `biopython`, `pyforest`, `subprocess`, `Levenshtein`, `scipy`, `sklearn`, `itertools`, and `mpl_toolkits`.
 
 ## Others
-For the scripts implementing other analyses in the MS, please contact the Lead Contact, Zhenhai Zhang (zhenhaismu@163.com).
+For scripts performing other analyses in this work, please contact the Lead Contact, Zhenhai Zhang (zhenhaismu@163.com).
