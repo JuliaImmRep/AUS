@@ -39,7 +39,7 @@ IGHV4S17*01	Homozygote	upstream	1	NA	815	ACATGGGAAATGTTCTCTGAGAGTCACGGACCTCCTGGG
 IGHV4S17*01	Homozygote	upstream	2	NA	815	ATGCTCTCTGAGAGTCATGGACATCCTGTGCAAGAACATGAAGCACCTGTGGTTCTTCCTCCTCCTGGTGGCAGCTCCCAGATGGGTCCTGTCC	37 0.080981595092	66	175	0.9326956172551308	MFS01	IgM	ATGCTCTCTGAGAGTCATGGACATCCTGTGCAAGAACATGAAGCACCTGTGGTTCTTCCTCCTCCTGGTGGCAGCTCCCAGATGGGTCCTGTCC_IGHV4S17*01	1	2	ATGAAGCACCTGTGGTTCTTCCTCCTCCTGGTGGCAGCTCCCAGATGGGTCCTGTCC	ATGCTCTCTGAGAGTCATGGACATCCTGTGCAAGAAC	ATCCTGTGCAAGAACATGAAGCACCTGTGGTTC
 ```
 
-Due to the primer difference between the in-house dataset and public dataset (`PRJEB15295` and `PRJNA503527`), the parameters employed for identifying AUS for these datasets are different. Three variant scripts are also provided in the `scripts` directory. The samples for which they apply to is provided in `aus_script_and_samples.txt`.
+Due to the primer difference between the in-house dataset and public dataset (`PRJEB15295` and `PRJNA503527`), the parameters employed for identifying AUS for these datasets are different. Three variant scripts are also provided in the `scripts` directory. The samples for which they apply to are provided in `scripts/aus_script_and_samples.csv`.
 
 ## Characterization analyses
 
