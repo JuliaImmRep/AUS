@@ -48,11 +48,27 @@ Due to the primer difference between the in-house dataset and public dataset (`P
 ## Characterization analyses
 ### AUS similarity (Figure 3)
 #### 5'UTR and leader similarity within human
+`python utr_sim_cal_visual.py`
+
+The script, `utr_sim_cal_visual.py`, implements the calculation and visualization of 5'UTR sequence similarity. It accepts the scored AUSs (i.e. `human.igh.upstream.score.and.filter.q.0.50.comb.txt`) and output similarity matrix files (i.e. `human.igh.utr.similarity.matrix.csv`) and the corresponding similarity heatmaps (i.e. `human.igh.utr.similarity.matrix.jpg`). The heatmap looks like,
+![heatmap_leader](figures/human.igh.utr.similarity.matrix.jpg)
+
+
 `python leader_sim_cal_visual.py`
 
 The script, `leader_sim_cal_visual.py`, implements the calculation and visualization of leader sequence similarity. It accepts the scored AUSs (i.e. `human.igh.upstream.score.and.filter.q.0.50.comb.txt`) and output similarity matrix files (i.e. `human.igh.leader.similarity.matrix.csv`) and the corresponding similarity heatmaps (i.e. `human.igh.leader.similarity.matrix.jpg`). The heatmap looks like,
+![heatmap_utr](figures/human.igh.leader.similarity.matrix.jpg)
 
-![heatmap](figures/human.igh.leader.similarity.matrix.jpg)
+#### 5'UTR and leader similarity between human and other species
+`python leader_sim_bwt_human_and_other_species.py`
+
+The script, `leader_sim_bwt_human_and_other_species.py`, implements the calculation and visualization of leader sequence similarity between human and other species. It accepts the scored AUSs from both human and other species (i.e. `rhesus.igh.upstream.score.and.filter.q.0.50.comb.txt`) and output similarity tables (i.e. `human.rhesus.v.leader.identity.csv`) and the corresponding scatter plots (i.e. `human.other.species.v.leader.identity.corr.jpg`). The heatmap looks like,
+![scatter_leader](figures/human.igh.leader.similarity.matrix.jpg)
+
+`python utr_sim_bwt_human_and_other_species.py`
+
+The script, `utr_sim_bwt_human_and_other_species.py`, implements the calculation and visualization of utr sequence similarity between human and other species. It accepts the scored AUSs from both human and other species (i.e. `rhesus.igh.upstream.score.and.filter.q.0.50.comb.txt`) and output similarity tables (i.e. `human.rhesus.v.utr.identity.csv`) and the corresponding scatter plots (i.e. `human.other.species.v.utr.identity.corr.jpg`). The heatmap looks like,
+![scatter_utr](figures/human.igh.utr.similarity.matrix.jpg)
 
 ## Dependencies
 In-house scripts above were written in Python (v3.7). Note that a series of modules are required, which include `pandas`, `numpy`, `csv`, `seaborn`, `matplotlib`, `warnings`, `multiprocessing`, `argparse`, `biopython`, `pyforest`, `subprocess`, `Levenshtein`, `scipy`, `sklearn`, `itertools`, and `mpl_toolkits`.
