@@ -9,7 +9,10 @@ Antibody upstream sequence (AUS) repository contains all key python scripts for 
 	* [AUS identification for human](#aus-identification-for-human)
 	* [AUS identification for non-human species](#aus-identification-for-non-human-species)
 * [Characterization analyses](#characterization-analyses)
-
+	* [AUS similarity (Figure 3)](#aus-similarity-(Figure-3))
+		* [5'UTR and leader similarity within human](#5'utr-and-leader-similarity-within-human)
+		* [5'UTR and leader similarity between human and other species](#5'utr-and-leader-similarity-between-human-and-other-species)
+#### 5'UTR and leader similarity within human
 
 ## AUS identification
 
