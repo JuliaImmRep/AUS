@@ -63,12 +63,12 @@ The script, `leader_sim_cal_visual.py`, implements the calculation and visualiza
 `python leader_sim_bwt_human_and_other_species.py`
 
 The script, `leader_sim_bwt_human_and_other_species.py`, implements the calculation and visualization of leader sequence similarity between human and other species. It accepts the scored AUSs from both human and other species (i.e. `rhesus.igh.upstream.score.and.filter.q.0.50.comb.txt`) and output similarity tables (i.e. `human.rhesus.v.leader.identity.csv`) and the corresponding scatter plots (i.e. `human.other.species.v.leader.identity.corr.jpg`). The heatmap looks like,
-![scatter_leader](figures/human.igh.leader.similarity.matrix.jpg)
+![scatter_leader](figures/human.other.species.v.leader.identity.corr.jpg)
 
 `python utr_sim_bwt_human_and_other_species.py`
 
 The script, `utr_sim_bwt_human_and_other_species.py`, implements the calculation and visualization of utr sequence similarity between human and other species. It accepts the scored AUSs from both human and other species (i.e. `rhesus.igh.upstream.score.and.filter.q.0.50.comb.txt`) and output similarity tables (i.e. `human.rhesus.v.utr.identity.csv`) and the corresponding scatter plots (i.e. `human.other.species.v.utr.identity.corr.jpg`). The heatmap looks like,
-![scatter_utr](figures/human.igh.utr.similarity.matrix.jpg)
+![scatter_utr](figures/human.other.species.v.utr.identity.corr.jpg)
 
 ## Dependencies
 In-house scripts above were written in Python (v3.7). Note that a series of modules are required, which include `pandas`, `numpy`, `csv`, `seaborn`, `matplotlib`, `warnings`, `multiprocessing`, `argparse`, `biopython`, `pyforest`, `subprocess`, `Levenshtein`, `scipy`, `sklearn`, `itertools`, and `mpl_toolkits`.
