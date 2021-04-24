@@ -16,7 +16,7 @@ Antibody upstream sequence (AUS) repository contains all key python scripts for 
 ### AUS identification for human
 
 ### AUS identification for non-human species
-`nonhuman_aus_identification.py cloneFl alignFl primer sample leader_imgt.fasta utr_imgt.fasta isotype`
+`python nonhuman_aus_identification.py cloneFl alignFl primer sample leader_imgt.fasta utr_imgt.fasta isotype`
 
 The script, `nonhuman_aus_identification.py`, accepts seven commandline parameters and outputs a single file recording the candidate AUSs for each sample.
 
@@ -46,8 +46,13 @@ IGHV4S17*01	Homozygote	upstream	2	NA	815	ATGCTCTCTGAGAGTCATGGACATCCTGTGCAAGAACAT
 Due to the primer difference between the in-house dataset and public dataset (`PRJEB15295` and `PRJNA503527`), the parameters employed for identifying AUS for these datasets are different. Three variant scripts are also provided in the `scripts` directory. The samples for which they apply to are provided in `scripts/aus_script_and_samples.csv`.
 
 ## Characterization analyses
+### AUS similarity (Figure 3)
+#### 5'UTR and leader similarity within human
+`python leader_sim_cal_visual.py`
 
+The script, `leader_sim_cal_visual.py`, implements the calculation and visualization of leader sequence similarity. It accepts the scored AUSs (i.e. `human.igh.upstream.score.and.filter.q.0.50.comb.txt`) and output similarity matrix files (i.e. `human.igh.leader.similarity.matrix.csv`) and the corresponding similarity heatmaps (i.e. `human.igh.leader.similarity.matrix.jpg`). The heatmap looks like,
 
+![heatmap](figures/human.igh.leader.similarity.matrix.jpg)
 
 ## Dependencies
 In-house scripts above were written in Python (v3.7). Note that a series of modules are required, which include `pandas`, `numpy`, `csv`, `seaborn`, `matplotlib`, `warnings`, `multiprocessing`, `argparse`, `biopython`, `pyforest`, `subprocess`, `Levenshtein`, `scipy`, `sklearn`, `itertools`, and `mpl_toolkits`.
