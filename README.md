@@ -11,10 +11,13 @@ Antibody upstream sequence (AUS) repository contains all key python scripts for 
 	* [AUS scoring and filtration](#aus-scoring-and-filtration)
 
 * [Characterization analyses](#characterization-analyses)
-	* [AUS similarity (Figure 3)](#aus-similarity-Figure-3)
+	* [AUS similarity (Figure 3)](#aus-similarity-figure-3)
 		* [5'UTR and leader similarity within human](#5utr-and-leader-similarity-within-human)
 		* [5'UTR and leader similarity between human and other species](#5utr-and-leader-similarity-between-human-and-other-species)
-
+	* [AUS function](#aus-function-figure-3)
+		* [Upstream open reading frame analyses (uORF)](#upstream-open-reading-frame-analyses-uorf)
+		* [Leader and gene expression correlation](#leader-and-gene-expression-correlation)
+#### Upstream open reading frame analyses (uORF)
 
 ## AUS identification
 
@@ -103,7 +106,7 @@ The script, `v_gene_sim_bwt_human_and_other_species_boxplot.py`, implements the 
 ![boxplot_v](figures/v_gene_similarity_cmp_bwt_core_noncore_for_diff_species_igh.jpg)
 
 
-### AUS function
+### AUS function (Figure 5)
 #### Upstream open reading frame analyses (uORF)
 `python utr_length_cmp_bwt_uorf_groups.py`
 
@@ -119,6 +122,7 @@ The script, `python uorf_expr_corr.py`, implement the analysis of correlation be
 ![barplot_uORF_expr](figures/human_igh_uorf_expr_corr.jpg)
 
 
+#### Leader and gene expression correlation
 `python leader_expr_corr.py`
 
 The script, `python leader_expr_corr.py`, implement the analysis of correlation between gene expression and leader sequences. It accepts three kinds of files as input, that includes the gene expression matrix for each sample (i.e. `human.igh.gene.expr.txt`), the scored AUS file, and the raw AUS file recording also the sample information. It outputs barplots demonstrating the correlation between gene expression and leader sequences for genes with leader polymorphisms. The output barplot looks like,
