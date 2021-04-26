@@ -103,6 +103,14 @@ The script, `v_gene_sim_bwt_human_and_other_species_boxplot.py`, implements the 
 ![boxplot_v](figures/v_gene_similarity_cmp_bwt_core_noncore_for_diff_species_igh.jpg)
 
 
+### AUS function
+#### upstream open reading frame analyses (uORF)
+`python utr_length_cmp_bwt_uorf_groups.py`
+
+The script, `utr_length_cmp_bwt_uorf_groups.py`, implement the comparison of 5'UTR length between uORF-absent and uORF-containing groups. It accepts discovered AUSs from all enrolled species and outputs the significance of unpaired t-test for each species-chain combination and a barplot demonstrating the 5'UTR length difference between two groups. The barplot looks like,
+
+![barplot_uORF_length](figures/utr_length_cmp_bwt_AUG_containing_absent.jpg)
+
 
 ## Dependencies
 In-house scripts above were written in Python (v3.7). Note that a series of modules are required, which include `pandas`, `numpy`, `csv`, `seaborn`, `matplotlib`, `warnings`, `multiprocessing`, `argparse`, `biopython`, `pyforest`, `subprocess`, `Levenshtein`, `scipy`, `sklearn`, `itertools`, and `mpl_toolkits`.
