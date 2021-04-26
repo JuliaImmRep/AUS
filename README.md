@@ -79,14 +79,14 @@ The script, `leader_sim_cal_visual.py`, implements the calculation and visualiza
 
 The script, `python human_utr_overlap_btw_gene.py`, implement the visualization of the sharing of 5'UTR sequences between genes. It accepts the scored AUS file and the raw AUS file, and outputs heatmaps demonstrating the sharings of 5'UTR sequences between genes. The output heatmamp looks like,
 
-![heatmap_utr_sharing](figures/human_igh_gene_utr_overlap_heatmap.jpg)
+![heatmap_utr_sharing](figures/human_igh_gene_utr_overlap_heatmap2.jpg)
 
 
 `python human_leader_overlap_btw_gene.py`
 
 The script, `python human_leader_overlap_btw_gene.py`, implement the visualization of the sharing of leader sequences between genes. It accepts the scored AUS file and the raw AUS file, and outputs heatmaps demonstrating the sharings of leader sequences between genes. The output heatmamp looks like,
 
-![heatmap_leader_sharing](figures/human_igh_gene_leader_overlap_heatmap.jpg)
+![heatmap_leader_sharing](figures/human_igh_gene_leader_overlap_heatmap2.jpg)
 
 
 #### 5'UTR and leader similarity between human and other species (Figure 3e and 3f)
