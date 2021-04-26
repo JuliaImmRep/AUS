@@ -8,6 +8,8 @@ Antibody upstream sequence (AUS) repository contains all key python scripts for 
 * [AUS identification](#aus-identification)
 	* [AUS identification for human](#aus-identification-for-human)
 	* [AUS identification for non-human species](#aus-identification-for-non-human-species)
+	* [AUS scoring and filtration](#aus-scoring-and-filtration)
+
 * [Characterization analyses](#characterization-analyses)
 	* [AUS similarity (Figure 3)](#aus-similarity-Figure-3)
 		* [5'UTR and leader similarity within human](#5utr-and-leader-similarity-within-human)
@@ -47,6 +49,12 @@ IGHV4S17*01	Homozygote	upstream	2	NA	815	ATGCTCTCTGAGAGTCATGGACATCCTGTGCAAGAACAT
 ```
 
 Due to the primer difference between the in-house dataset and public dataset (`PRJEB15295` and `PRJNA503527`), the parameters employed for identifying AUS for these datasets are different. Three variant scripts are also provided in the `scripts` directory. The samples for which they apply to are provided in `scripts/aus_script_and_samples.csv`.
+
+
+### AUS scoring and filtration
+`python aus_score.py discovered_aus_combined.txt leader_imgt.fasta scored_aus.txt`
+
+The script, `aus_score.py`, implements the AUS scoring. It accepts two parameters, including the discovered AUSs combined from all samples and reference leader sequences, and outputs a single scored AUS sequence file.
 
 ## Characterization analyses
 ### AUS similarity (Figure 3)
