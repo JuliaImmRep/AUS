@@ -14,7 +14,7 @@ Antibody upstream sequence (AUS) repository contains all key python scripts for 
 	* [AUS similarity (Figure 3)](#aus-similarity-figure-3)
 		* [5'UTR and leader similarity within human](#5utr-and-leader-similarity-within-human)
 		* [5'UTR and leader similarity between human and other species](#5utr-and-leader-similarity-between-human-and-other-species)
-	* [AUS function](#aus-function-figure-3)
+	* [AUS function (Figure 5)](#aus-function-figure-5)
 		* [Upstream open reading frame analyses (uORF)](#upstream-open-reading-frame-analyses-uorf)
 		* [Leader and gene expression correlation](#leader-and-gene-expression-correlation)
 #### Upstream open reading frame analyses (uORF)
@@ -73,46 +73,62 @@ The script, `utr_sim_cal_visual.py`, implements the calculation and visualizatio
 The script, `leader_sim_cal_visual.py`, implements the calculation and visualization of leader sequence similarity. It accepts the scored AUSs (i.e. `human.igh.upstream.score.and.filter.q.0.50.comb.txt`) and output similarity matrix files (i.e. `human.igh.leader.similarity.matrix.csv`) and the corresponding similarity heatmaps (i.e. `human.igh.leader.similarity.matrix.jpg`). The heatmap looks like,
 ![heatmap_utr](figures/human.igh.leader.similarity.matrix.jpg)
 
-#### 5'UTR and leader similarity between human and other species (Figure 3e and 3f)
-`python utr_sim_bwt_human_and_other_species.py`
 
-The script, `utr_sim_bwt_human_and_other_species.py`, implements the calculation and visualization of utr sequence similarity between human and other species. It accepts the scored AUSs from both human and other species (i.e. `rhesus.igh.upstream.score.and.filter.q.0.50.comb.txt`) and output similarity tables (i.e. `human.rhesus.v.utr.identity.csv`) and the corresponding scatter plots (i.e. `human.other.species.v.utr.identity.corr.jpg`). The heatmap looks like,
+#### 5'UTR and leader sharings between V genes
+`python human_utr_overlap_btw_gene.py`
+
+The script, `python human_utr_overlap_btw_gene.py`, implement the visualization of the sharing of 5'UTR sequences between genes. It accepts the scored AUS file and the raw AUS file, and outputs heatmaps demonstrating the sharings of 5'UTR sequences between genes. The output heatmamp looks like,
+
+![heatmap_utr_sharing](figures/human_igh_gene_utr_overlap_heatmap.jpg)
+
+
+`python human_leader_overlap_btw_gene.py`
+
+The script, `python human_leader_overlap_btw_gene.py`, implement the visualization of the sharing of leader sequences between genes. It accepts the scored AUS file and the raw AUS file, and outputs heatmaps demonstrating the sharings of leader sequences between genes. The output heatmamp looks like,
+
+![heatmap_leader_sharing](figures/human_igh_gene_leader_overlap_heatmap.jpg)
+
+
+#### 5'UTR and leader similarity between human and other species (Figure 3e and 3f)
+`python utr_sim_btw_human_and_other_species.py`
+
+The script, `utr_sim_btw_human_and_other_species.py`, implements the calculation and visualization of utr sequence similarity between human and other species. It accepts the scored AUSs from both human and other species (i.e. `rhesus.igh.upstream.score.and.filter.q.0.50.comb.txt`) and output similarity tables (i.e. `human.rhesus.v.utr.identity.csv`) and the corresponding scatter plots (i.e. `human.other.species.v.utr.identity.corr.jpg`). The heatmap looks like,
 
 ![scatter_utr](figures/human.other.species.v.utr.identity.corr.jpg)
 
-`python leader_sim_bwt_human_and_other_species.py`
+`python leader_sim_btw_human_and_other_species.py`
 
-The script, `leader_sim_bwt_human_and_other_species.py`, implements the calculation and visualization of leader sequence similarity between human and other species. It accepts the scored AUSs from both human and other species (i.e. `rhesus.igh.upstream.score.and.filter.q.0.50.comb.txt`) and output similarity tables (i.e. `human.rhesus.v.leader.identity.csv`) and the corresponding scatter plots (i.e. `human.other.species.v.leader.identity.corr.jpg`). The heatmap looks like,
+The script, `leader_sim_btw_human_and_other_species.py`, implements the calculation and visualization of leader sequence similarity between human and other species. It accepts the scored AUSs from both human and other species (i.e. `rhesus.igh.upstream.score.and.filter.q.0.50.comb.txt`) and output similarity tables (i.e. `human.rhesus.v.leader.identity.csv`) and the corresponding scatter plots (i.e. `human.other.species.v.leader.identity.corr.jpg`). The heatmap looks like,
 
 ![scatter_leader](figures/human.other.species.v.leader.identity.corr.jpg)
 
-`python utr_sim_bwt_human_and_other_species_boxplot.py`
+`python utr_sim_btw_human_and_other_species_boxplot.py`
 
-The script, `utr_sim_bwt_human_and_other_species_boxplot.py`, implements the calculation and visualization of utr sequence similarity between human and other species in different gene group. It accepts the scored AUSs from both human and other species (i.e. `rhesus.igh.upstream.score.and.filter.q.0.50.comb.txt`), the pre-calculated pairwise gene identity matrix and the core gene list, and output similarity tables (i.e. `human_other_species_utr_similarity_core_and_noncore_igh.csv`) and the corresponding boxplot (i.e. `utr_similarity_cmp_bwt_core_noncore_for_diff_species_igh.jpg`). The boxplot looks like,
+The script, `utr_sim_btw_human_and_other_species_boxplot.py`, implements the calculation and visualization of utr sequence similarity between human and other species in different gene group. It accepts the scored AUSs from both human and other species (i.e. `rhesus.igh.upstream.score.and.filter.q.0.50.comb.txt`), the pre-calculated pairwise gene identity matrix and the core gene list, and output similarity tables (i.e. `human_other_species_utr_similarity_core_and_noncore_igh.csv`) and the corresponding boxplot (i.e. `utr_similarity_cmp_btw_core_noncore_for_diff_species_igh.jpg`). The boxplot looks like,
 
-![boxplot_utr](figures/utr_similarity_cmp_bwt_core_noncore_for_diff_species_igh.jpg)
+![boxplot_utr](figures/utr_similarity_cmp_btw_core_noncore_for_diff_species_igh.jpg)
 
 
-`python leader_sim_bwt_human_and_other_species_boxplot.py`
+`python leader_sim_btw_human_and_other_species_boxplot.py`
 
-The script, `leader_sim_bwt_human_and_other_species_boxplot.py`, implements the calculation and visualization of leader sequence similarity between human and other species in different gene groups. It accepts the scored AUSs from both human and other species (i.e. `rhesus.igh.upstream.score.and.filter.q.0.50.comb.txt`), the pre-calculated pairwise gene identity matrix and the core gene list, and output similarity tables (i.e. `human_other_species_leader_similarity_core_and_noncore_igh.csv`) and the corresponding boxplot (i.e. `leader_similarity_cmp_bwt_core_noncore_for_diff_species_igh.jpg`). The boxplot looks like,
+The script, `leader_sim_btw_human_and_other_species_boxplot.py`, implements the calculation and visualization of leader sequence similarity between human and other species in different gene groups. It accepts the scored AUSs from both human and other species (i.e. `rhesus.igh.upstream.score.and.filter.q.0.50.comb.txt`), the pre-calculated pairwise gene identity matrix and the core gene list, and output similarity tables (i.e. `human_other_species_leader_similarity_core_and_noncore_igh.csv`) and the corresponding boxplot (i.e. `leader_similarity_cmp_btw_core_noncore_for_diff_species_igh.jpg`). The boxplot looks like,
 
-![boxplot_utr](figures/leader_similarity_cmp_bwt_core_noncore_for_diff_species_igh.jpg)
+![boxplot_utr](figures/leader_similarity_cmp_btw_core_noncore_for_diff_species_igh.jpg)
 
-`python v_gene_sim_bwt_human_and_other_species_boxplot.py`
+`python v_gene_sim_btw_human_and_other_species_boxplot.py`
 
-The script, `v_gene_sim_bwt_human_and_other_species_boxplot.py`, implements the calculation and visualization of v gene sequence similarity between human and other species in different gene groups. It accepts the pre-calculated pairwise gene identity matrix and the core gene list and output a boxplot demonstrating gene similarity distribution (i.e. `v_gene_similarity_cmp_bwt_core_noncore_for_diff_species_igh.jpg`). The boxplot looks like,
+The script, `v_gene_sim_btw_human_and_other_species_boxplot.py`, implements the calculation and visualization of v gene sequence similarity between human and other species in different gene groups. It accepts the pre-calculated pairwise gene identity matrix and the core gene list and output a boxplot demonstrating gene similarity distribution (i.e. `v_gene_similarity_cmp_btw_core_noncore_for_diff_species_igh.jpg`). The boxplot looks like,
 
-![boxplot_v](figures/v_gene_similarity_cmp_bwt_core_noncore_for_diff_species_igh.jpg)
+![boxplot_v](figures/v_gene_similarity_cmp_btw_core_noncore_for_diff_species_igh.jpg)
 
 
 ### AUS function (Figure 5)
 #### Upstream open reading frame analyses (uORF)
-`python utr_length_cmp_bwt_uorf_groups.py`
+`python utr_length_cmp_btw_uorf_groups.py`
 
-The script, `utr_length_cmp_bwt_uorf_groups.py`, implement the comparison of 5'UTR length between uORF-absent and uORF-containing groups. It accepts discovered AUSs from all enrolled species and outputs the significance of unpaired t-test for each species-chain combination and a barplot demonstrating the 5'UTR length difference between two groups. The barplot looks like,
+The script, `utr_length_cmp_btw_uorf_groups.py`, implement the comparison of 5'UTR length between uORF-absent and uORF-containing groups. It accepts discovered AUSs from all enrolled species and outputs the significance of unpaired t-test for each species-chain combination and a barplot demonstrating the 5'UTR length difference between two groups. The barplot looks like,
 
-![barplot_uORF_length](figures/utr_length_cmp_bwt_AUG_containing_absent.jpg)
+![barplot_uORF_length](figures/utr_length_cmp_btw_AUG_containing_absent.jpg)
 
 
 `python uorf_expr_corr.py`
