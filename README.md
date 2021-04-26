@@ -104,12 +104,20 @@ The script, `v_gene_sim_bwt_human_and_other_species_boxplot.py`, implements the 
 
 
 ### AUS function
-#### upstream open reading frame analyses (uORF)
+#### Upstream open reading frame analyses (uORF)
 `python utr_length_cmp_bwt_uorf_groups.py`
 
 The script, `utr_length_cmp_bwt_uorf_groups.py`, implement the comparison of 5'UTR length between uORF-absent and uORF-containing groups. It accepts discovered AUSs from all enrolled species and outputs the significance of unpaired t-test for each species-chain combination and a barplot demonstrating the 5'UTR length difference between two groups. The barplot looks like,
 
 ![barplot_uORF_length](figures/utr_length_cmp_bwt_AUG_containing_absent.jpg)
+
+
+`python uorf_expr_corr.py`
+
+The script, `python uorf_expr_corr.py`, implement the investigation of correlation between gene expression and number of uORFs. It accepts three kinds of files as input, that includes the gene expression matrix for each sample (i.e. `human.igh.gene.expr.txt`), the scored AUS file, and the raw AUS file recording also the sample information. It outputs barplots demonstrating the correlation between gene expression and the number of uORFs for genes having AUSs with different number of uORFs. The output barplot looks like,
+
+![barplot_uORF_expr](figures/uorf_expr_corr_human_igh.jpg)
+
 
 
 ## Dependencies
