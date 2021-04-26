@@ -114,11 +114,16 @@ The script, `utr_length_cmp_bwt_uorf_groups.py`, implement the comparison of 5'U
 
 `python uorf_expr_corr.py`
 
-The script, `python uorf_expr_corr.py`, implement the investigation of correlation between gene expression and number of uORFs. It accepts three kinds of files as input, that includes the gene expression matrix for each sample (i.e. `human.igh.gene.expr.txt`), the scored AUS file, and the raw AUS file recording also the sample information. It outputs barplots demonstrating the correlation between gene expression and the number of uORFs for genes having AUSs with different number of uORFs. The output barplot looks like,
+The script, `python uorf_expr_corr.py`, implement the analysis of correlation between gene expression and number of uORFs. It accepts three kinds of files as input, that includes the gene expression matrix for each sample (i.e. `human.igh.gene.expr.txt`), the scored AUS file, and the raw AUS file recording also the sample information. It outputs barplots demonstrating the correlation between gene expression and the number of uORFs for genes having AUSs with different number of uORFs. The output barplot looks like,
 
-![barplot_uORF_expr](figures/uorf_expr_corr_human_igh.jpg)
+![barplot_uORF_expr](figures/human_igh_uorf_expr_corr.jpg)
 
 
+`python leader_expr_corr.py`
+
+The script, `python leader_expr_corr.py`, implement the analysis of correlation between gene expression and leader sequences. It accepts three kinds of files as input, that includes the gene expression matrix for each sample (i.e. `human.igh.gene.expr.txt`), the scored AUS file, and the raw AUS file recording also the sample information. It outputs barplots demonstrating the correlation between gene expression and leader sequences for genes with leader polymorphisms. The output barplot looks like,
+
+![barplot_leader_expr](figures/human_igh_leader_expr_corr.jpg)
 
 ## Dependencies
 In-house scripts above were written in Python (v3.7). Note that a series of modules are required, which include `pandas`, `numpy`, `csv`, `seaborn`, `matplotlib`, `warnings`, `multiprocessing`, `argparse`, `biopython`, `pyforest`, `subprocess`, `Levenshtein`, `scipy`, `sklearn`, `itertools`, and `mpl_toolkits`.
