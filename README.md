@@ -13,6 +13,7 @@ Antibody upstream sequence (AUS) repository contains all key python scripts for 
 * [Characterization analyses](#characterization-analyses)
 	* [AUS similarity (Figure 3)](#aus-similarity-figure-3)
 		* [5'UTR and leader similarity within human](#5utr-and-leader-similarity-within-human)
+		* [5'UTR and leader sharings between V genes](#5utr-and-leader-sharings-between-v-genes)
 		* [5'UTR and leader similarity between human and other species](#5utr-and-leader-similarity-between-human-and-other-species)
 	* [AUS function (Figure 5)](#aus-function-figure-5)
 		* [Upstream open reading frame analyses (uORF)](#upstream-open-reading-frame-analyses-uorf)
