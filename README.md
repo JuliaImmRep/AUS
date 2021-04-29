@@ -143,6 +143,21 @@ The script, `v_gene_sim_btw_human_and_other_species_boxplot.py`, implements the 
 ![boxplot_v](figures/v_gene_similarity_cmp_btw_core_noncore_for_diff_species_igh.jpg)
 
 
+### Leader SNPs (Figure 4)
+#### The RS ratios of SNPs in leaders.
+`python leader_SNPs_RS.py species_chain_upstream_combined_summary.score.txt isotype`
+
+The script, `leader_SNPs_RS.py`, implement the RS ratios and visualization of leaders. It accepts 1 file which recorded the upstream sequences from all chains and all species, such as `human_igh_upstream_combined_summary.score.txt` and 1 parameter, such as `IgH, IgK, IgL`. The output file record the RS ratio and transited percent between different physicochemical properties. The pie chart looks like,
+
+
+#### The transited properies of SNPs in leaders.
+`python leader_SNPs_propery.py`, implement the transited percent between different physicochemical properties of SNPs and visualization. It accepts the result of RS ratios from different species and chains (such as `data.fig5AB.human_igh_IgH_Gene_RS.txt`), which are stored in the work directory `figure_5`. The pie chart looks like,
+
+
+#### The NDI and ADI of SNPs in leaders from human heavy chain.
+`python `
+
+
 ### AUS function (Figure 5)
 #### Upstream open reading frame analyses (uORF)
 `python utr_length_cmp_btw_uorf_groups.py`
