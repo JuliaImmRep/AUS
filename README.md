@@ -71,6 +71,14 @@ Due to the primer difference between the in-house dataset and public dataset (`P
 The script, `aus_score.py`, implements the AUS scoring. It accepts two parameters, including the discovered AUSs combined from all samples and reference leader sequences, and outputs a single scored AUS sequence file.
 
 ## Characterization analyses
+### AUS characterization (Figure 2)
+#### The characterization of 5'UTR and leader about species
+`python aus_characterization_visual.py`
+
+The script, `aus_characterization_visual.py`, implements the visualization of 5'UTR and leader about species. It combined two result files for specific species, such as `human_igh_upstream_combined_summary.txt` and the related scored file `human.igh.upstream.score.and.filter.q.0.50.comb.txt`. These files are stored in the work directory `upstream_result`. The output file are stored in the output directory `figure 2`. The output figures looks like,
+
+
+
 ### AUS similarity (Figure 3)
 #### 5'UTR and leader similarity within human
 `python utr_sim_cal_visual.py`
