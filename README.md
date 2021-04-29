@@ -28,6 +28,11 @@ Antibody upstream sequence (AUS) repository contains all key python scripts for 
 The script, `human_aus_identification.py`, accepts three commandline parameters and outputs a single file recording the candidate AUSs for each sample.
 
 The commanline parameters include,
+* `Human_0001.clones.txt`: clone file output by MiXCR
+* `Human_0001.alignments.txt`: alignment file output by MiXCR
+* `Human.leader.annotation.info.txt`: annotation of the potential length of leader region for every allele based on the reference from IMGT.
+
+The output file, (i.e. `sample.upstream.sequence.txt`), looks like the output from nonhuman upstream sequences.
 
 ### AUS identification for non-human species
 `python nonhuman_aus_identification.py cloneFl alignFl primer sample leader_imgt.fasta utr_imgt.fasta isotype`
